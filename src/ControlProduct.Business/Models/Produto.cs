@@ -21,7 +21,7 @@ namespace ControlProduct.Business.Models
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Valor { get; set; }
-        public DateTime Date { get; set; } = DateTime.Now;
+        public DateTime DataCadastro { get; set; } = DateTime.Now;
         public bool Ativo { get; set; } = true;
         public Fornecedor Fornecedor { get; set; }
     }
