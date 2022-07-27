@@ -14,5 +14,6 @@ namespace ControlProduct.App.Data
         {
         }
         public DbSet<ControlProduct.App.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
+        public DbSet<ControlProduct.App.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
     }
 }
