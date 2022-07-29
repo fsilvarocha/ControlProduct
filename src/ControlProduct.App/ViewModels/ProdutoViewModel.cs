@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ControlProduct.App.ViewModels
 {
@@ -26,6 +27,7 @@ namespace ControlProduct.App.ViewModels
         public string Descricao { get; set; }
 
         [DisplayName("Imagem do Produto")]
+        
         public IFormFile ImagemUpload { get; set; }
         public string Imagem { get; set; }
 
@@ -38,7 +40,9 @@ namespace ControlProduct.App.ViewModels
 
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; } = true;
+
         public FornecedorViewModel Fornecedor { get; set; }
+        
         public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
     }
 }
